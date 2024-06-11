@@ -12,7 +12,6 @@ export default function Navbar() {
 
         {link: "WOMEN", route: "/women"},
         // {link: "MEN", route: "/men"},
-        // {link: "KIDS", route: "/kids"}
     ];
 
     return (
@@ -61,7 +60,7 @@ export default function Navbar() {
                             <Link to= {"/"}>CONTACT US</Link>
                         </div>
                         <div className="m-[10px]">
-                            <a href="https://play.google.com/store/apps/details?id=com.thesouledstore">DOWNLOAD APP</a>
+                            <button className="button"> <a href="https://play.google.com/store/apps/details?id=com.thesouledstore">DOWNLOAD APP</a></button>
                         </div>
                     </div>
                 </div>

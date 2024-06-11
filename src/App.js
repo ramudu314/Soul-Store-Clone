@@ -4,7 +4,6 @@ import { useContext, useEffect } from "react";
 import Navbar from "./components/homePage/navbar";
 import PageForMen from "./pages/homePage/pageForMen";
 import PageForWomen from "./pages/homePage/pageForWomen";
-import PageForKids from "./pages/homePage/pageForKids";
 import { ModalContext } from "./context/modalContext";
 import Footer from "./components/homePage/footer";
 import AuthenticationPage from "./pages/loginPage/authenticationPage";
@@ -122,7 +121,6 @@ function App() {
       <Route path="/" element={<PageForMen />} />
       <Route path="/men" element={<PageForMen />} />
       <Route path="/women" element={<PageForWomen />} />
-      {/* <Route path="/kids" element={<PageForKids />} /> */}
       <Route path="/wishlist" element= {<Wishlist />} />
       <Route path="/cart" element= {<Cart />} />
       <Route path="/membership" element= {<MembershipPage />} />

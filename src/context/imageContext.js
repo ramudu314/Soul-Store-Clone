@@ -47,27 +47,8 @@ function ImageProvider({children}) {
         }
     );
 
-    const [bigCorousalForKids, setBigCorousalForKids]= useState(
-        {
-            largeSize: [
-                "https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/Web-Banner_2_ukQb6Ka.jpg?format=webp&w=1024&dpr=2.0",
-                "https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/Homepage-Banner_2_jrzmrA4.jpg?format=webp&w=1024&dpr=2.0",
-                "https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/homepage_7_P1Htkpd.jpg?format=webp&w=1024&dpr=2.0",
-                "https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/Homepage-Banner_6_zVgDl5c.jpg?format=webp&w=1024&dpr=2.0",
-                "https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/web-banner_5.jpg?format=webp&w=1024&dpr=2.0",
-                "https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/Web-Banner_5_D9ayTvY.jpg?format=webp&w=1024&dpr=2.0",
-            ],
-
-            smallSize: [
-                "https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/Mobile-banner_2_qfMXryt.jpg?format=webp&w=768&dpr=2.0",
-                "https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/Mobile-Banner-2_VO6weLP.jpg?format=webp&w=768&dpr=2.0",
-                "https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/mobile_6.jpg?format=webp&w=768&dpr=2.0",
-                "https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/Mobile-Banner_54.jpg?format=webp&w=768&dpr=2.0",
-                "https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/Mobile-banner_35.jpg?format=webp&w=768&dpr=2.0",
-                "https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/Mobile-banner_11.jpg?format=webp&w=768&dpr=2.0",
-            ],
-        }
-    )
+    
+    
 
     const categories= [
         {
@@ -157,41 +138,8 @@ function ImageProvider({children}) {
                 }
             ],
 
-            kids: [
-                {
-                    route: "boys-sweatshirts",
-                    url: "https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Website-tile4_ARoe1Fc.jpg?format=webp&w=360&dpr=1.3",
-                },
-                {
-                    route: "girls-sweatshirts",
-                    url: "https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Website-tile6_7IBpCAX.jpg?format=webp&w=360&dpr=1.3",
-                },
-                {
-                    route: "boys-jackets",
-                    url: "https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Website-tile1_iCn5C4m.jpg?format=webp&w=360&dpr=1.3",
-                },
-                {
-                    route: "girls-cotton-jackets",
-                    url: "https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Website-tile3_hmYiz8k.jpg?format=webp&w=360&dpr=1.3",
-                },
-                {
-                    route: "boys-tshirts",
-                    url: "https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Website-tile10_3.jpg?format=webp&w=360&dpr=1.3",
-                },
-                {
-                    route: "girls-t-shirts",
-                    url: "https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Website-tile8_U7szSuZ.jpg?format=webp&w=360&dpr=1.3",
-                },
-                {
-                    route: "girls-gathered-dresses",
-                    url: "https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Website-tile12.jpg?format=webp&w=360&dpr=1.3",
-                },
-                {
-                    route: "boys-polo-tshirts",
-                    url: "https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Website-tile9_1.jpg?format=webp&w=360&dpr=2.0",
-                }
-                
-            ],
+           
+              
         }
     ];
 
@@ -234,7 +182,7 @@ function ImageProvider({children}) {
         }, 
     ]
     return (
-        <ImageContext.Provider value={{bigCorousalForMen, bigCorousalForWomen, bigCorousalForKids, categories, merchandise}}>
+        <ImageContext.Provider value={{bigCorousalForMen, bigCorousalForWomen,categories, merchandise}}>
             {children}
         </ImageContext.Provider>
     )

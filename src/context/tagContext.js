@@ -89,27 +89,7 @@ function TagProvider({children}) {
     ]);
 
 
-    const [apparelForKids, setApparelForKids]= useState([
-        {category: "BOYS", isRoute: false, route: "/", tagList: [
-            {tag: "T-Shirts", routeName: "/", isNewCollection: false},
-            {tag: "Oversized T-Shirts", routeName: "/", isNewCollection: false},
-            {tag: "Shirts", routeName: "/", isNewCollection: false},
-            {tag: "Hoodies & Sweatshirts", routeName: "/", isNewCollection: false},
-            {tag: "Jackets", routeName: "/", isNewCollection: false},
-            {tag: "Joggers", routeName: "/", isNewCollection: false},
-            {tag: "Shorts", routeName: "/", isNewCollection: false},
-        ] },
-        {category: "GIRLS", isRoute: false, route: "/", tagList: [
-            {tag: "T-Shirts", routeName: "/", isNewCollection: false},
-            {tag: "Tops", routeName: "/", isNewCollection: false},
-            {tag: "Dresses", routeName: "/", isNewCollection: false},
-            {tag: "Hoodies & Sweatshirts", routeName: "/", isNewCollection: false},
-            {tag: "Jackets", routeName: "/", isNewCollection: false},
-            {tag: "Shorts", routeName: "/", isNewCollection: false},
-            {tag: "Joggers", routeName: "/", isNewCollection: false},
-        ] },
-        {category: "VACATION WEAR", isRoute: true, route: "/kids-winterwear", tagList: [] },
-    ]);
+    
 
     const [shopByThemes, setShopByThemes]= useState([
         {theme: "SUPERHEROES", tagList: [
@@ -206,7 +186,7 @@ function TagProvider({children}) {
 
 
     return (
-        <TagContext.Provider value={{apparelForMen, apparelForWomen, apparelForKids, shopByThemes,
+        <TagContext.Provider value={{apparelForMen, apparelForWomen,shopByThemes,
             optionsInAccountSection}}>
             {children}
         </TagContext.Provider>
